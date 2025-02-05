@@ -520,52 +520,7 @@ Library.Sections.__index = Library.Sections
 			Square.Size = UDim2.new(0, 4, 0, 4)
 			Square.Parent = TextButton
 			Square.ZIndex = 100
-            local function createSnowParticle(parent)
-                local snow = Drawing.new("Circle")
-                snow.Radius = math.random(1, 2)
-                snow.Color = Color3.fromRGB(255, 255, 255)
-                snow.Filled = true
-                snow.Transparency = 0.8
-                snow.Position = Vector2.new(
-                    math.random(parent.Position.X, parent.Position.X + parent.Size.X),
-                    parent.Position.Y
-                )
-                return snow
-            end
-            
-            local snowParticles = {}
-            local maxSnowParticles = 20 -- Adjust this number to control snow density
-            
-            -- Add this to your existing code
-            game:GetService("RunService").RenderStepped:Connect(function()
-                -- Create new snow particles if needed
-                while #snowParticles < maxSnowParticles do
-                    local snow = createSnowParticle(mainFrame)
-                    table.insert(snowParticles, snow)
-                end
-                
-                -- Update snow positions
-                for i, snow in ipairs(snowParticles) do
-                    snow.Position = snow.Position + Vector2.new(0, 1)
-                    
-                    -- Reset snow when it reaches bottom of UI
-                    if snow.Position.Y > mainFrame.Position.Y + mainFrame.Size.Y then
-                        snow.Position = Vector2.new(
-                            math.random(mainFrame.Position.X, mainFrame.Position.X + mainFrame.Size.X),
-                            mainFrame.Position.Y
-                        )
-                    end
-                end
-            end)
-            
-            -- Add cleanup function
-            local function cleanupSnow()
-                for _, snow in ipairs(snowParticles) do
-                    snow:Remove()
-                end
-                snowParticles = {}
-            end
-            
+
 			local SquareAccent = Instance.new("Frame")
 			SquareAccent.Name = "SquareAccent"
 			SquareAccent.BackgroundColor3 = Color3.fromHSV(H, 1, 1)
@@ -2661,7 +2616,7 @@ end)
 			ContentOutline.TopImage = "rbxassetid://7783554086"
 			ContentOutline.Active = true
 			ContentOutline.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-			ContentOutline.BorderColor3 = Color3.fromRGB(6, 6, 6)
+			ContentOutline.BorderColor3 = Color3.fromRGB()
 			ContentOutline.Position = UDim2.new(0, 0, 1, 0)
 			ContentOutline.Size = UDim2.new(1, 0, 0, 50)
 			ContentOutline.Visible = false
