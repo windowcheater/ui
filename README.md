@@ -366,7 +366,7 @@ Library.Sections.__index = Library.Sections
 
 			local IconInline = Instance.new("Frame")
 			IconInline.Name = "IconInline"
-			IconInline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			IconInline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			IconInline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			IconInline.BorderSizePixel = 0
 			IconInline.BackgroundTransparency = 1
@@ -403,7 +403,7 @@ Library.Sections.__index = Library.Sections
 
 			local ColorInline = Instance.new("Frame")
 			ColorInline.Name = "ColorInline"
-			ColorInline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			ColorInline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			ColorInline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			ColorInline.BorderSizePixel = 0
 			ColorInline.Position = UDim2.new(0, 2, 0, 2)
@@ -857,7 +857,7 @@ Library.Sections.__index = Library.Sections
 
 		local Inline = Instance.new("Frame")
 		Inline.Name = "Inline"
-		Inline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+		Inline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 		Inline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Inline.BorderSizePixel = 0
 		Inline.Position = UDim2.new(0, 1, 0, 1)
@@ -916,7 +916,7 @@ Library.Sections.__index = Library.Sections
 
 			local Inline = Instance.new("Frame")
 			Inline.Name = "Inline"
-			Inline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			Inline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			Inline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Inline.BorderSizePixel = 0
 			Inline.Position = UDim2.new(0, 1, 0, 1)
@@ -931,7 +931,7 @@ Library.Sections.__index = Library.Sections
 
 			local HolderInline = Instance.new("Frame")
 			HolderInline.Name = "HolderInline"
-			HolderInline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			HolderInline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			HolderInline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			HolderInline.BorderSizePixel = 0
 			HolderInline.Position = UDim2.new(0, 2, 0, 2)
@@ -1005,7 +1005,7 @@ Library.Sections.__index = Library.Sections
 			UIGradient2.Name = "UIGradient"
 			UIGradient2.Color = ColorSequence.new({
 				ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
-				ColorSequenceKeypoint.new(1, Color3.fromRGB(35, 35, 35)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(6, 6, 6)),
 			})
 			UIGradient2.Rotation = 90
 			UIGradient2.Parent = TopGradient
@@ -1040,7 +1040,7 @@ Library.Sections.__index = Library.Sections
 
 			local FadeThing = Instance.new("Frame")
 			FadeThing.Name = "FadeThing"
-			FadeThing.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			FadeThing.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			FadeThing.BackgroundTransparency = 1
 			FadeThing.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			FadeThing.BorderSizePixel = 0
@@ -1274,7 +1274,7 @@ end)
 			UIGradient.Name = "UIGradient"
 			UIGradient.Color = ColorSequence.new({
 				ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
-				ColorSequenceKeypoint.new(1, Color3.fromRGB(35, 35, 35)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(6, 6, 6)),
 			})
 			UIGradient.Enabled = false
 			UIGradient.Rotation = 90
@@ -1428,7 +1428,7 @@ end)
 
 			local SectionInline = Instance.new("Frame")
 			SectionInline.Name = "SectionInline"
-			SectionInline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			SectionInline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			SectionInline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			SectionInline.BorderSizePixel = 0
 			SectionInline.Position = UDim2.new(0, 1, 0, 1)
@@ -1539,7 +1539,7 @@ end)
 
 			local SectionInline = Instance.new("Frame")
 			SectionInline.Name = "SectionInline"
-			SectionInline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			SectionInline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			SectionInline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			SectionInline.BorderSizePixel = 0
 			SectionInline.Position = UDim2.new(0, 1, 0, 1)
@@ -1593,7 +1593,7 @@ end)
 
 			local FadeThing = Instance.new("Frame")
 			FadeThing.Name = "FadeThing"
-			FadeThing.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			FadeThing.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			FadeThing.BackgroundTransparency = 1
 			FadeThing.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			FadeThing.BorderSizePixel = 0
@@ -1648,7 +1648,7 @@ end)
 				UIGradient.Name = "UIGradient"
 				UIGradient.Color = ColorSequence.new({
 					ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
-					ColorSequenceKeypoint.new(1, Color3.fromRGB(35, 35, 35)),
+					ColorSequenceKeypoint.new(1, Color3.fromRGB(6, 6, 6)),
 				})
 				UIGradient.Enabled = false
 				UIGradient.Rotation = 90
@@ -3634,7 +3634,7 @@ end)
 
 			local Frame = Instance.new("Frame")
 			Frame.Name = "Frame"
-			Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			Frame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Frame.BorderSizePixel = 0
 			Frame.Position = UDim2.new(0, 1, 0, 1)
