@@ -10,6 +10,16 @@ local fontConfig = {
     }
 }
 
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if input.KeyCode == Enum.KeyCode.RightShift then
+        if ScreenGui then
+            ScreenGui:Destroy()
+        end
+    end
+end)
+
 local jsonConfig = game:GetService("HttpService"):JSONEncode(fontConfig)
 
 if not isfile("Arial.json") then
