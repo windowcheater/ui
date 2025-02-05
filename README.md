@@ -394,7 +394,7 @@ Library.Sections.__index = Library.Sections
 			--
 			local ColorOutline = Instance.new("Frame")
 			ColorOutline.Name = "ColorOutline"
-			ColorOutline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			ColorOutline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			ColorOutline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			ColorOutline.Position = UDim2.new(0,-184,0,-20)
 			ColorOutline.Size = UDim2.new(0, 184, 0, 182)
@@ -412,7 +412,7 @@ Library.Sections.__index = Library.Sections
 			local Accent = Library:NewInstance("Frame", true)
 			Accent.Name = "Accent"
 			Accent.BackgroundColor3 = Library.Accent
-			Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			Accent.Size = UDim2.new(1, 0, 0, 2)
 
 			local UIGradient = Instance.new("UIGradient")
@@ -787,7 +787,7 @@ Library.Sections.__index = Library.Sections
 		local Accent = Instance.new("Frame")
 		Accent.Name = "Accent"
 		Accent.BackgroundColor3 = color ~= nil and color or Library.Accent
-		Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+		Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 		Accent.Size = UDim2.new(0,2,1,0)
 		Accent.BackgroundTransparency = 1
 		table.insert(notification.Objects, Accent)
@@ -849,7 +849,7 @@ Library.Sections.__index = Library.Sections
 		local Outline = Instance.new("Frame")
 		Outline.Name = "Outline"
 		Outline.AnchorPoint = Vector2.new(0.5, 0.5)
-		Outline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		Outline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 		Outline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Outline.Position = UDim2.new(0.5, 0, 0.5, 0)
 		Outline.Size = UDim2.new(0, 500, 0, 17)
@@ -867,7 +867,7 @@ Library.Sections.__index = Library.Sections
 		local Accent = Library:NewInstance("Frame", true)
 		Accent.Name = "Accent"
 		Accent.BackgroundColor3 = Library.Accent
-		Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+		Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 		Accent.BorderSizePixel = 0
 		Accent.Position = UDim2.new(0, 0, 0, 0)
 		Accent.Size = UDim2.new(1, 0, 0, 1)
@@ -906,7 +906,7 @@ Library.Sections.__index = Library.Sections
 			local Outline = Instance.new("TextButton")
 			Outline.Name = "Outline"
 			Outline.AnchorPoint = Vector2.new(0.5, 0.5)
-			Outline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			Outline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			Outline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Outline.Position = UDim2.new(0.5, 0, 0.5, 0)
 			Outline.Size = UDim2.new(0, Window.Size.X, 0, Window.Size.Y)
@@ -924,7 +924,7 @@ Library.Sections.__index = Library.Sections
 
 			local HolderOutline = Instance.new("Frame")
 			HolderOutline.Name = "HolderOutline"
-			HolderOutline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			HolderOutline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			HolderOutline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			HolderOutline.Position = UDim2.new(0, 6, 0, 22)
 			HolderOutline.Size = UDim2.new(1, -12, 1, -28)
@@ -940,7 +940,7 @@ Library.Sections.__index = Library.Sections
 			local Accent = Library:NewInstance("Frame", true)
 			Accent.Name = "Accent"
 			Accent.BackgroundColor3 = Library.Accent
-			Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			Accent.BorderSizePixel = 0
 			Accent.Position = UDim2.new(0, 0, 0, 0)
 			Accent.Size = UDim2.new(1, 0, 0, 1)
@@ -958,7 +958,7 @@ Library.Sections.__index = Library.Sections
 
 			local Tabs = Instance.new("Frame")
 			Tabs.Name = "Tabs"
-			Tabs.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			Tabs.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Tabs.BorderSizePixel = 0
 			Tabs.Position = UDim2.new(0, 0, 0, 1)
@@ -979,7 +979,7 @@ Library.Sections.__index = Library.Sections
 			local Accent1 = Library:NewInstance("Frame", true)
 			Accent1.Name = "Accent"
 			Accent1.BackgroundColor3 = Library.Accent
-			Accent1.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			Accent1.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			Accent1.Size = UDim2.new(1, 0, 0, 1)
 
 			local UIGradient1 = Instance.new("UIGradient")
@@ -1158,7 +1158,7 @@ end)
 				local Accent = Library:NewInstance("Frame", true)
 				Accent.Name = "Accent"
 				Accent.BackgroundColor3 = Library.Accent
-				Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+				Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 				Accent.Size = UDim2.new(1, 6, 0, 2)
 
 				local UIGradient = Instance.new("UIGradient")
@@ -1419,7 +1419,7 @@ end)
 			--
 			local SectionOutline = Instance.new("Frame")
 			SectionOutline.Name = "SectionOutline"
-			SectionOutline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			SectionOutline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			SectionOutline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			SectionOutline.Size = UDim2.new(1, 0, 0, Section.Size)
 			SectionOutline.AutomaticSize = Section.AutoSize and Enum.AutomaticSize.Y or Enum.AutomaticSize.None
@@ -1437,7 +1437,7 @@ end)
 			local Accent = Library:NewInstance("Frame", true)
 			Accent.Name = "Accent"
 			Accent.BackgroundColor3 = Library.Accent
-			Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			Accent.BorderSizePixel = 0
 			Accent.Position = UDim2.new(0, 0, 0, 0)
 			Accent.Size = UDim2.new(1, 0, 0, 1)
@@ -1453,7 +1453,7 @@ end)
 
 			local BlackLine = Instance.new("Frame")
 			BlackLine.Name = "BlackLine"
-			BlackLine.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			BlackLine.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			BlackLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			BlackLine.BorderSizePixel = 0
 			BlackLine.Position = UDim2.new(0, 0, 1, 0)
@@ -1530,7 +1530,7 @@ end)
 			--
 			local SectionOutline = Instance.new("Frame")
 			SectionOutline.Name = "SectionOutline"
-			SectionOutline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			SectionOutline.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			SectionOutline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			SectionOutline.Parent = Section.Side == "left" and Section.Page.Elements.Left or Section.Side == "right" and Section.Page.Elements.Right
 			SectionOutline.Size = UDim2.new(1, 0, 0, Section.Size)
@@ -1548,7 +1548,7 @@ end)
 			local Accent = Library:NewInstance("Frame", true)
 			Accent.Name = "Accent"
 			Accent.BackgroundColor3 = Library.Accent
-			Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			Accent.BorderSizePixel = 0
 			Accent.Position = UDim2.new(0, 0, 0, 0)
 			Accent.Size = UDim2.new(1, 0, 0, 1)
@@ -1564,7 +1564,7 @@ end)
 
 			local BlackLine = Instance.new("Frame")
 			BlackLine.Name = "BlackLine"
-			BlackLine.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			BlackLine.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			BlackLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			BlackLine.BorderSizePixel = 0
 			BlackLine.Position = UDim2.new(0, 0, 1, 0)
@@ -1575,7 +1575,7 @@ end)
 
 			local Tabs = Instance.new("Frame")
 			Tabs.Name = "Tabs"
-			Tabs.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			Tabs.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Tabs.BorderSizePixel = 0
 			Tabs.Position = UDim2.new(0, 0, 0, 1)
@@ -2616,7 +2616,7 @@ end)
 			ContentOutline.TopImage = "rbxassetid://7783554086"
 			ContentOutline.Active = true
 			ContentOutline.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-			ContentOutline.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			ContentOutline.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			ContentOutline.Position = UDim2.new(0, 0, 1, 0)
 			ContentOutline.Size = UDim2.new(1, 0, 0, 50)
 			ContentOutline.Visible = false
@@ -3627,7 +3627,7 @@ end)
 			--
 			local NewPlayer = Instance.new("Frame")
 			NewPlayer.Name = "NewPlayer"
-			NewPlayer.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			NewPlayer.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			NewPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			NewPlayer.Size = UDim2.new(1, 0, 0.5, 70)
 			NewPlayer.Parent = Playerlist.Page.Elements.RealPage
@@ -3882,7 +3882,7 @@ end)
 			local Accent = Library:NewInstance("Frame", true)
 			Accent.Name = "Accent"
 			Accent.BackgroundColor3 = Library.Accent
-			Accent.BorderColor3 = Color3.fromRGB(20, 20, 20)
+			Accent.BorderColor3 = Color3.fromRGB(6, 6, 6)
 			Accent.BorderSizePixel = 0
 			Accent.Position = UDim2.new(0, 0, 0, 0)
 			Accent.Size = UDim2.new(1, 0, 0, 1)
@@ -3898,7 +3898,7 @@ end)
 
 			local BlackLine = Instance.new("Frame")
 			BlackLine.Name = "BlackLine"
-			BlackLine.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			BlackLine.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 			BlackLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			BlackLine.BorderSizePixel = 0
 			BlackLine.Position = UDim2.new(0, 0, 1, 0)
@@ -4093,7 +4093,7 @@ end)
 
 						local Line1 = Instance.new("Frame")
 						Line1.Name = "Line1"
-						Line1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+						Line1.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 						Line1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 						Line1.BorderSizePixel = 0
 						Line1.Position = UDim2.new(0.333, 0, 0, 0)
@@ -4102,7 +4102,7 @@ end)
 
 						local Line11 = Instance.new("Frame")
 						Line11.Name = "Line1"
-						Line11.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+						Line11.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
 						Line11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 						Line11.BorderSizePixel = 0
 						Line11.Position = UDim2.new(0.667, 0, 0, 0)
