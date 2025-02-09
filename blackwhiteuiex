@@ -120,6 +120,51 @@ local NEVERLOSE = {
 	_Name="NEVERLOSE"
 }
 
+function NEVERLOSE:AddSnowEffect(Frame)
+    local SnowContainer = Instance.new("Frame")
+    SnowContainer.Name = "SnowContainer"
+    SnowContainer.BackgroundTransparency = 1
+    SnowContainer.Size = UDim2.new(1, 0, 1, 0)
+    SnowContainer.ClipsDescendants = true
+    SnowContainer.Parent = Frame
+    SnowContainer.ZIndex = 1
+
+    local function createSnowflake()
+        local snowflake = Instance.new("Frame")
+        snowflake.Size = UDim2.new(0, 3, 0, 3)
+        snowflake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        snowflake.BackgroundTransparency = 0.2
+        snowflake.Position = UDim2.new(math.random(), 0, -0.1, 0)
+        snowflake.Parent = SnowContainer
+        snowflake.ZIndex = 2
+
+        local UICorner = Instance.new("UICorner")
+        UICorner.CornerRadius = UDim.new(1, 0)
+        UICorner.Parent = snowflake
+
+        return snowflake
+    end
+
+    task.spawn(function()
+        while task.wait(0.3) do
+            if NEVERLOSE.Themes.BlackgroundColor == Color3.fromRGB(43, 43, 43) then
+                local snowflake = createSnowflake()
+                local fallDuration = math.random(4, 7)
+                
+                TweenService:Create(snowflake, TweenInfo.new(fallDuration, Enum.EasingStyle.Linear), {
+                    Position = UDim2.new(snowflake.Position.X.Scale, 0, 1.1, 0)
+                }):Play()
+                
+                task.delay(fallDuration, function()
+                    snowflake:Destroy()
+                end)
+            end
+        end
+    end)
+end
+
+
+
 function NEVERLOSE:Theme(name)
 	name = tostring(name or "original"):lower()
 	if name == "original" then
@@ -167,6 +212,13 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 
 	local ScreenGui = Instance.new("ScreenGui")
 	local Frame = Instance.new("Frame")
+    local Frame = Instance.new("Frame")
+    local ScreenGui = Instance.new("ScreenGui")
+    local Frame = Instance.new("Frame")
+    NEVERLOSE:AddSnowEffect(Frame)
+    Frame.Parent = ScreenGui
+    Frame.Active = true
+    Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 	local UICorner = Instance.new("UICorner")
 	local Frame_2 = Instance.new("Frame")
 	local UICorner_2 = Instance.new("UICorner")
