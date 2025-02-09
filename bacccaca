@@ -123,15 +123,15 @@ local NEVERLOSE = {
 function NEVERLOSE:Theme(name)
 	name = tostring(name or "original"):lower()
 	if name == "original" then
-		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(1, 17, 33)
-		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
-		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(7, 7, 17)
-		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(0, 34, 44)
-		NEVERLOSE.Themes.MainColor = Color3.fromRGB(19, 176, 243)
-		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(3, 6, 25)
-		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(0, 17, 35)
-		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(3, 35, 50)
-		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
+		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(255, 255, 255)
+		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(255, 255, 255)
 	end
 
 	if name == "nightly" then
@@ -151,7 +151,7 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(8, 8, 8)
 		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(8, 8, 8)
 		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(25, 25, 25)
-		NEVERLOSE.Themes.MainColor = Color3.fromRGB(0, 172, 247)
+		NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 255, 255)
 		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(64, 65, 67)
 		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(13, 13, 13)
 		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(28, 28, 28)
@@ -417,7 +417,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	HeadName.TextColor3 = Color3.fromRGB(255, 255, 255)
 	HeadName.TextScaled = true
 	HeadName.TextSize = 14.000
-	HeadName.TextStrokeColor3 = Color3.fromRGB(0, 251, 255)
+	HeadName.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 	HeadName.TextStrokeTransparency = 0.720
 	HeadName.TextWrapped = true
 
