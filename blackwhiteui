@@ -138,7 +138,7 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(43, 43, 43)
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(4, 4, 4)
 		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(4, 4, 4)
-		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(100, 100, 100)
+		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(200, 200, 200)
 		NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 255, 255)
 		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(65, 54, 31)
 		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(18, 18, 18)
@@ -215,7 +215,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextLabel.TextScaled = true
 			TextLabel.TextSize = 14.000
-			TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 255, 255)
+			TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 			TextLabel.TextStrokeTransparency = 0.900
 			TextLabel.TextWrapped = true
 			TextLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -1933,7 +1933,7 @@ function NEVERLOSE:KeySystem(TitleName,LinkKey,callback)
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextScaled = true
 	Title.TextSize = 14.000
-	Title.TextStrokeColor3 = Color3.fromRGB(0, 255, 255)
+	Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextStrokeTransparency = 0.860
 	Title.TextWrapped = true
 
