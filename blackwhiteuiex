@@ -215,7 +215,6 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
     NEVERLOSE:AddSnowEffect(Frame)
     Frame.Parent = ScreenGui
     Frame.Active = true
-    Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 	local UICorner = Instance.new("UICorner")
 	local Frame_2 = Instance.new("Frame")
 	local UICorner_2 = Instance.new("UICorner")
