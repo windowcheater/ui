@@ -127,16 +127,16 @@ function NEVERLOSE:AddSnowEffect(Frame)
     SnowContainer.Size = UDim2.new(1, 0, 1, 0)
     SnowContainer.ClipsDescendants = true
     SnowContainer.Parent = Frame
-    SnowContainer.ZIndex = 1
+    SnowContainer.ZIndex = 9999
 
     local function createSnowflake()
         local snowflake = Instance.new("Frame")
-        snowflake.Size = UDim2.new(0, 6, 0, 6) -- Bigger snowflakes
+        snowflake.Size = UDim2.new(0, 6, 0, 6)
         snowflake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        snowflake.BackgroundTransparency = 0.6 -- More transparent
+        snowflake.BackgroundTransparency = 0.6
         snowflake.Position = UDim2.new(math.random(), 0, -0.1, 0)
         snowflake.Parent = SnowContainer
-        snowflake.ZIndex = 2
+        snowflake.ZIndex = 10000
 
         local UICorner = Instance.new("UICorner")
         UICorner.CornerRadius = UDim.new(1, 0)
