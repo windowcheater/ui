@@ -121,42 +121,39 @@ local NEVERLOSE = {
 }
 
 function NEVERLOSE:AddSnowEffect(Frame)
-    local SnowContainer = Instance.new("Frame")
-    SnowContainer.Name = "SnowContainer"
-    SnowContainer.BackgroundTransparency = 1
-    SnowContainer.Size = UDim2.new(1, 0, 1, 0)
-    SnowContainer.ClipsDescendants = true
-    SnowContainer.Parent = Frame
-    SnowContainer.ZIndex = 1
+    local RainContainer = Instance.new("Frame")
+    RainContainer.Name = "RainContainer"
+    RainContainer.BackgroundTransparency = 1
+    RainContainer.Size = UDim2.new(1, 0, 1, 0)
+    RainContainer.ClipsDescendants = true
+    RainContainer.Parent = Frame
+    RainContainer.ZIndex = 1
 
-    local function createSnowflake()
-        local snowflake = Instance.new("Frame")
-        snowflake.Size = UDim2.new(0, 3, 0, 3)
-        snowflake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        snowflake.BackgroundTransparency = 0.2
-        snowflake.Position = UDim2.new(math.random(), 0, -0.1, 0)
-        snowflake.Parent = SnowContainer
-        snowflake.ZIndex = 2
+    local function createRaindrop()
+        local raindrop = Instance.new("Frame")
+        raindrop.Size = UDim2.new(0, 1, 0, 10) -- Thinner and longer for rain effect
+        raindrop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        raindrop.BackgroundTransparency = 0.2
+        raindrop.Position = UDim2.new(math.random(), 0, -0.1, 0)
+        raindrop.Parent = RainContainer
+        raindrop.ZIndex = 2
+        raindrop.Rotation = 15 -- Slight angle for rain effect
 
-        local UICorner = Instance.new("UICorner")
-        UICorner.CornerRadius = UDim.new(1, 0)
-        UICorner.Parent = snowflake
-
-        return snowflake
+        return raindrop
     end
 
     task.spawn(function()
-        while task.wait(0.3) do
+        while task.wait(0.1) do -- Faster spawn rate for rain
             if NEVERLOSE.Themes.BlackgroundColor == Color3.fromRGB(43, 43, 43) then
-                local snowflake = createSnowflake()
-                local fallDuration = math.random(4, 7)
+                local raindrop = createRaindrop()
+                local fallDuration = math.random(2, 3) -- Faster fall speed
                 
-                TweenService:Create(snowflake, TweenInfo.new(fallDuration, Enum.EasingStyle.Linear), {
-                    Position = UDim2.new(snowflake.Position.X.Scale, 0, 1.1, 0)
+                TweenService:Create(raindrop, TweenInfo.new(fallDuration, Enum.EasingStyle.Linear), {
+                    Position = UDim2.new(raindrop.Position.X.Scale, 0, 1.1, 0)
                 }):Play()
                 
                 task.delay(fallDuration, function()
-                    snowflake:Destroy()
+                    raindrop:Destroy()
                 end)
             end
         end
